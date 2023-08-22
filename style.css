@@ -131,3 +131,15 @@ body {
     cursor: pointer;
     font-size: 0.9em;
 }
+
+.checkout-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 100%;
+}

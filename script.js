@@ -42,5 +42,20 @@ document.addEventListener('DOMContentLoaded', function () {
         const cartItemCount = cartList.children.length;
         cartCount.textContent = cartItemCount;
     }
+    checkoutBtn.addEventListener('click', function () {
+        if (totalValue > 0) {
+            alert(`Compra finalizada! Total da compra: R$${totalValue.toFixed(2)}. Obrigado por comprar conosco!`);
+            clearCart();
+        } else {
+            alert('Seu carrinho está vazio. Adicione produtos antes de finalizar a compra.');
+        }
+    });
+
+    function clearCart() {
+        cartList.innerHTML = '';
+        totalValue = 0;
+        updateCartTotal();
+        updateCartCount();
+    }
 });
 
