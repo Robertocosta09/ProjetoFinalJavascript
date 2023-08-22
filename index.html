@@ -4,23 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador de Compras</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Minha Loja</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Simulador de Compras</h1>
+    <header class="header">
+        <img src="Projeto/Nerd.png" alt="Logo da Loja" class="logo">
+
+        <div class="cart-icon">
+            <img src="Projeto/cart-regular-24.png" alt="Ícone do Carrinho" class="cart-icon-img">
+            <span class="cart-count">0</span>
+        </div>
     </header>
-    <main>
-        <section class="produtos">
-            <h2>Produtos Disponíveis</h2>
-            <ul id="produtos-lista"></ul>
-        </section>
-        <section class="carrinho">
-            <h2>Carrinho de Compras</h2>
-            <ul id="carrinho-lista"></ul>
-        </section>
-    </main>
+    <div class="products">
+        <div class="product" data-name="Goku" data-price="100">
+            <img src="Projeto/Goku.jpg" alt="Produto 1">
+            <h2>Pop Funko Goku</h2>
+            <p>Preço: R$100,00</p>
+            <button class="add-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product" data-name="Harry Potter" data-price="150">
+            <img src="Projeto/Harry.jpg" alt="Produto 2">
+            <h2>Pop Funko Harry Potter</h2>
+            <p>Preço: R$150,00</p>
+            <button class="add-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product" data-name="Pikachu" data-price="200">
+            <img src="Projeto/Pikachu.jpg" alt="Produto 3">
+            <h2>Pop Funko Pikachu</h2>
+            <p>Preço: R$200,00</p>
+            <button class="add-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product" data-name="Rapunzel" data-price="250">
+            <img src="Projeto/rapunzel.jpg" alt="Produto 4">
+            <h2>Pop Funko Rapunzel</h2>
+            <p>Preço: R$250,00</p>
+            <button class="add-btn">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    <div class="cart">
+        <h2>Carrinho</h2>
+        <ul class="cart-list">
+            <!-- Itens do carrinho serão adicionados dinamicamente aqui -->
+        </ul>
+    </div>
+    <div class="cart">
+        <h2>Carrinho</h2>
+        <p>Total: R$<span class="cart-total">0.00</span></p>
+        <ul class="cart-list">
+            <!-- Itens do carrinho serão adicionados dinamicamente aqui -->
+        </ul>
+    </div>
     <script src="script.js"></script>
 </body>
 
