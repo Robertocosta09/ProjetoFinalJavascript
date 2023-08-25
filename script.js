@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const cartList = document.querySelector('.cart-list');
     const cartTotal = document.querySelector('.cart-total');
     const cartCount = document.querySelector('.cart-count');
+    const checkoutBtn = document.querySelector('.checkout-btn');
     let totalValue = 0;
 
     addButtons.forEach(addButton => {
